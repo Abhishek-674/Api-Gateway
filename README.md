@@ -126,14 +126,20 @@ changeOrigin: true
 
 Gateway changes Host header before forwarding:
 Host: localhost:8080 changes to localhost:3001
-example all these 
-
+```
+ Example
+```json
 localhost:8080:users
+
 localhost:8080:users/1
+
 localhost:8080:users/123/profile
+
 localhost:8080:users?active=true
 
-***all these users start with users/ so these request header will be changed to localhost:3001***
+```
+
+***all these users start with `users/` so these request header will be changed to localhost:3001***
 
 #### Similarly for all the services
 
